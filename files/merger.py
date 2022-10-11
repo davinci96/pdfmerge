@@ -1,7 +1,7 @@
 from PyPDF2 import PdfFileMerger
 
-def merger(files):
-    output_file = './files/test.pdf'
+def merger(files, filename):
+    output_file = './files/' + filename + '.pdf'
     merger = PdfFileMerger()
 
     for pdf in files:

@@ -2,6 +2,7 @@
 
 :root{
     --border-color: #40BFEF;
+    --hover-color: #2F3540
 }
 
 *{
@@ -29,11 +30,66 @@ section{
     border-radius: 10px;
 }
 
-.file{
+section h3{
+    padding-bottom: 20px;
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+section form label{
+    padding-bottom: 8px;
+    font-size: 14px;
+}
+
+.file-load{
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid var(--border-color);
+}
+
+section form button{
+    outline: none;
+    border: 0;
+    background-color: var(--border-color);
+    color: white;
+    height: 30px;
+    border-radius: 15px;
+    font-weight: 700;
+}
+
+section form button:hover{
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+
+.file input{
+    display: none;
+}
+
+.file label{
+    display: block;
+    border: 1px dotted var(--border-color);
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
 
 }
 
 footer{
     width: 100vw;
     height: 3vh;
+    text-align: right;
+}
+
+footer p{
+    font-size: 12px;
+    padding-right: 10px;
 }

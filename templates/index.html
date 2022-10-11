@@ -12,15 +12,19 @@
     <main>
         <section>
             <h3>Unir PDFs</h3>
-            <form action="http://localhost:5000/upload" method="post" enctype="multipart/form-data">
-                <label for="">Nombre del archivo: </label>
-                <input class="file-load" type="text"><br>
-                <label for="file">Archivo</label>
-                <input class="file" type="file" name="file" id="" multiple=""><br>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="file-name">Nombre del archivo: </label>
+                <input class="file-load" name="file-name" type="text"><br>
+                <div class="file">
+                    <label for="files">Elegir Archivo </label>
+                    <input type="file" name="file" id="files" multiple=""><br>
+                </div>
                 <button type="submit">Unir</button>
             </form>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>En caso problemas, por favor informe a la extension 300</p>
+    </footer>
 </body>
 </html>
