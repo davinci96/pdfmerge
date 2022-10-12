@@ -41,6 +41,11 @@ section form{
     width: 70%;
 }
 
+section p{
+    font-size: 13px;
+    text-align: center;
+}
+
 section form label{
     padding-bottom: 8px;
     font-size: 14px;

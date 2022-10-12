@@ -10,21 +10,13 @@
 </head>
 <body>
     <main>
-        <section>
-            <h3>Unir PDFs</h3>
-            <form action="/upload" method="post" enctype="multipart/form-data">
-                <label for="file-name">Nombre del archivo: </label>
-                <input class="file-load" name="file-name" type="text"><br>
-                <div class="file">
-                    <label for="files">Elegir Archivo </label>
-                    <input type="file" name="file" id="files" multiple=""><br>
-                </div>
-                <button type="submit">Unir</button>
-            </form>
-        </section>
+        {% block content %}
+
+        {% endblock %}
     </main>
     <footer>
         <p>En caso problemas, por favor informe a la extension 300</p>
     </footer>
+    <script src="../static/js/clear_inputs.js"></script>
 </body>
 </html>
