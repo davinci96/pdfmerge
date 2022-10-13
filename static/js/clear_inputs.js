@@ -1,4 +1,5 @@
-// let send_button = document.getElementById('send').addEventListener('click', (event) => {
-//     document.getElementById('file-name');
-//     document.getElementById('files');
-// });
+let send_button = document.getElementById('send').addEventListener('click', (event) => {
+    setTimeout(() => {
+        document.location.reload();
+    }, 3000);
+})

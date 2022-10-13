@@ -42,8 +42,9 @@ section form{
 }
 
 section p{
+    width: 220px;
     font-size: 13px;
-    text-align: center;
+    text-align: justify;
 }
 
 section form label{
@@ -74,6 +75,24 @@ section form button:hover{
     cursor: pointer;
 }
 
+section a{
+    background-color: var(--border-color);
+    color: white;
+    border-radius: 15px;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+section a:hover{
+    background-color: var(--hover-color);
+}
+
 
 .file input{
     display: none;
@@ -85,7 +104,6 @@ section form button:hover{
     text-align: center;
     padding-top: 5px;
     cursor: pointer;
-
 }
 
 footer{

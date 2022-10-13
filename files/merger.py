@@ -5,6 +5,10 @@ def merger(filename, files):
     output_file = './files/result/' + filename
 
     old_files = os.listdir('./files/temp')
+    old_results = os.listdir('./files/result')
+
+    for file in old_results:
+        os.remove('./files/result/' + file)
 
     if os.path.exists(output_file):
         os.remove(output_file)
