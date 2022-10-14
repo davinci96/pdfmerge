@@ -18,6 +18,7 @@ def upload():
     try:
         if request.method == 'POST':
             files = request.files.getlist("file")
+            
             for file in files:
                 filename = secure_filename(file.filename)
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
