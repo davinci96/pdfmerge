@@ -2,6 +2,10 @@
 
 Cliente web liviano construido con Flask para unir multiples archivos PDF.
 
+<p align="center">
+<img src="https://i.ibb.co/9vRXByp/2022-10-26-09-16-58-online-video-cutter-com.gif" alt="UI" border="0">
+</p>
+
 ## Dependencias:
 | Libreria | Version |
 | --- | --- |
