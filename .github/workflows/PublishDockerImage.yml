@@ -26,5 +26,5 @@ jobs:
                   file: ./Dockerfile
                   push: true
                   tags: |
-                    ${{ secrets.DOCKER_USERNAME }}/${{ env.image_tag }}
+                    sebas1012/${{ env.image_tag }}
                         
