@@ -1,3 +1,5 @@
+[![deploy](https://github.com/Sebas1012/pdfmerge/actions/workflows/PublishDockerImage.yml/badge.svg)](https://github.com/Sebas1012/pdfmerge/actions/workflows/PublishDockerImage.yml)
+
 # MergePDF
 
 MergePDF es un cliente web liviano desarrollado con Flask que simplifica la fusión de múltiples archivos PDF en uno solo. Con una interfaz sencilla y rápida, MergePDF ofrece una solución eficiente para combinar documentos PDF, facilitando la gestión de archivos de manera ágil y sin complicaciones..
