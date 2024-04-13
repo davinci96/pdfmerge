@@ -2,7 +2,7 @@ on: push
 name: deploy
 jobs:
     deploy:
-        name: Deploy ZeroApp on Docker Hub
+        name: Deploy MergePDF on Docker Hub
         runs-on: ubuntu-latest
         steps:
             -
@@ -21,5 +21,5 @@ jobs:
                   context: .
                   file: ./Dockerfile
                   push: true
-                  tags: ${{ secrets.DOCKER_USERNAME }}/pdfmerger:${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && 'latest' || github.ref == 'refs/heads/develop' && 'dev' }}
+                  tags: ${{ secrets.DOCKER_USERNAME }}/pdfmerger:${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && 'latest' || (github.ref == 'refs/heads/develop' && 'beta') }}
                         
