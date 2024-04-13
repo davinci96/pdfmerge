@@ -1,5 +1,9 @@
 on: push
 name: deploy
+
+env:
+    image_tag: ${{ github.ref == 'refs/heads/main' && 'pdfmerger:latest' || (github.ref == 'refs/heads/develop' && 'pdfmerger:beta') }}
+
 jobs:
     deploy:
         name: Deploy MergePDF on Docker Hub
@@ -22,5 +26,5 @@ jobs:
                   file: ./Dockerfile
                   push: true
                   tags: |
-                    ${{ secrets.DOCKER_USERNAME }}/${{ github.ref == 'refs/heads/main' && 'pdfmerger:latest' || (github.ref == 'refs/heads/develop' && 'pdfmerger:beta') }}
+                    ${{ secrets.DOCKER_USERNAME }}/${{ env.image_tag }}
                         
