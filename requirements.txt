@@ -7,3 +7,4 @@ gunicorn
 # Tools
 python-dotenv
 PyPDF2 == 2.11.1
+Werkzeug == 2.2.2
