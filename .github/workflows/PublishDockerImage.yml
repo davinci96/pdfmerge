@@ -3,6 +3,7 @@ name: deploy
 
 env:
     image_tag: ${{ github.ref == 'refs/heads/main' && 'pdfmerger:latest' || (github.ref == 'refs/heads/develop' && 'pdfmerger:beta') }}
+    docker_user: ${{ secrets.DOCKERHUB_USERNAME }}
 
 jobs:
     deploy:
@@ -26,5 +27,5 @@ jobs:
                   file: ./Dockerfile
                   push: true
                   tags: |
-                    sebas1012/${{ env.image_tag }}
+                    ${{ env.docker_user }}/${{ env.image_tag }}
                         
