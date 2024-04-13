@@ -22,9 +22,9 @@ def upload_files():
 
             pdf_files = [upload_folder + '/' + pdfs for pdfs in os.listdir(upload_folder) if pdfs.endswith(".pdf")]
             user_filename = str(request.form.get('file-name')) + '.pdf'
-            mg.merger(user_filename, pdf_files)
 
-            path = 'app/utils/files/result/' + user_filename 
+            path = mg.merger(user_filename, pdf_files)
+            
             return send_file(path, as_attachment=True)
     except Exception as err:
         return render_template('error.html', err=err)
