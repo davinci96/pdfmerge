@@ -22,6 +22,5 @@ jobs:
                   file: ./Dockerfile
                   push: true
                   tags: |
-                    ${{ secrets.DOCKER_USERNAME }}/pdfmerger:${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && 'latest' }}
-                    ${{ secrets.DOCKER_USERNAME }}/pdfmerger:${{ github.event_name == 'push' && github.ref == 'refs/heads/develop' && 'beta' }}
+                    ${{ secrets.DOCKER_USERNAME }}/pdfmerger:${{ github.ref == 'refs/heads/main' && 'latest' || (github.ref == 'refs/heads/develop' && 'beta') }}
                         
