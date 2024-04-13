@@ -6,6 +6,10 @@ MergePDF es un cliente web liviano desarrollado con Flask que simplifica la fusi
 <img src="https://i.ibb.co/9vRXByp/2022-10-26-09-16-58-online-video-cutter-com.gif" alt="UI" border="0">
 </p>
 
+## Importante⚠️:
+
+No olvides reemplazar en el [Dockerfile](Dockerfile) la variable de entorno `SECRET_KEY` con cualquier token generado por ti.
+
 ## Ejecutar con Docker:
 
 Para ejecutar la aplicacion solo basta con ejecutar el siguiente comando:
