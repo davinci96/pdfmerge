@@ -1,5 +1,5 @@
 # Flask and flask extensions
-flask == 2.2.2
+flask == 2.2.5
 
 # Server
 gunicorn
